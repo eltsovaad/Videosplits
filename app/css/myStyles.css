@@ -1,0 +1,10 @@
+.quest {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 10px;
+}
+.questcolor {
+    background: #F6F6F6;
+}
+.questselectedcolor{
+    background: #ddd;
+}

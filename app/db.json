@@ -1,0 +1,71 @@
+[
+ { 
+   "class": "М21",
+    "competitors" : [
+      {
+        "lastName": "Pupkin",          
+        "firstName": "Vasily",
+        "bib": 111,
+        "splits" : [
+          {
+            "name": "КП 78", 
+            "link": "https://youtube.com/..."
+                        }, 
+          {
+            "name": "КП 123", 
+            "link": null
+                      }
+        ]
+      },{
+        "lastName": "Pupkin",
+        "firstName": "Иван",
+        "bib": 112,
+        "splits" : [
+          {
+            "name": "КП 78",
+            "link": "https://youtube.com/..."
+          },
+          {
+            "name": "КП 123",
+            "link": null
+          }
+        ]
+      }
+    ]
+  },
+  {
+	"class": "Ж21",
+    "competitors" : [
+      {
+        "lastName": "Иванова",          
+        "firstName": "Анна",
+        "bib": 113,
+        "splits" : [
+          {
+            "name": "КП 78", 
+            "link": "https://youtube.com/..."
+                        }, 
+          {
+            "name": "КП 123", 
+            "link": null
+                      }
+        ]
+      }, 
+	  {
+		"lastName": "Иванова",          
+        "firstName": "Анна",
+        "bib": 114,
+        "splits" : [
+          {
+            "name": "КП 78", 
+            "link": "https://youtube.com/..."
+                        }, 
+          {
+            "name": "КП 123", 
+            "link": null
+                      }
+        ]
+	  }
+    ]
+  }
+]
