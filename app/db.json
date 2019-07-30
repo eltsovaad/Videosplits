@@ -3,8 +3,8 @@
    "class": "М21",
     "competitors" : [
       {
-        "lastName": "Pupkin",          
-        "firstName": "Vasily",
+        "lastName": "Красавцев",
+        "firstName": "Василий",
         "bib": 111,
         "splits" : [
           {
@@ -17,7 +17,7 @@
                       }
         ]
       },{
-        "lastName": "Pupkin",
+        "lastName": "Тамбасов",
         "firstName": "Иван",
         "bib": 112,
         "splits" : [
@@ -38,7 +38,7 @@
     "competitors" : [
       {
         "lastName": "Иванова",          
-        "firstName": "Анна",
+        "firstName": "Татьяна",
         "bib": 113,
         "splits" : [
           {

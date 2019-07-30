@@ -2,16 +2,18 @@
 <html ng-app='myApp'>
 <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/myStyles.css" />
 </head>
 <body>
 <div ng-controller="Controller">
     <fieldset>
         <form>
-             <!--<input type="radio" name="Category" ng-repeat= "i in competition" value="i.class" >{{i.class}}</input>-->
             <br>
-        <input type="text" ng-model="lstNme" placeholder="Введите фамилию">
-        <button type="reset" ng-click="reset()" >Очистить</button>
+            <p>Поиск:
+                <input type="text" ng-model="lstNme" placeholder="Введите номер или ФИО">
+            </p>
+            <button type="reset" ng-click="reset()" >Очистить</button>
         </form>
     </fieldset>
     <ul class="nav nav-tabs">
@@ -24,17 +26,20 @@
     </ul>
 
     <div ng-model="el" ng-repeat="i in competition|filter: {class:filtText}">
+        <p>{{i.class}}</p>
         <div class="table-responsive">
-        <table class="table table-hover table-bordered table-condensed">
+        <table class="table table-bordered table-condensed table-hover table-hover-cells">
+            <thead>
         <tr>
             <th>Номер</th>
             <th>Фамилия Имя</th>
             <th ng-repeat="b in i.competitors[0].splits">{{b.name}}</th>
         </tr>
+            </thead>
         <tr ng-repeat="a in i.competitors|filter:lstNme">
             <td>{{a.bib}}</td>
             <td>{{a.lastName+" "+a.firstName}}</td>
-            <td ng-repeat="c in a.splits">{{c.link}}</td>
+            <td ng-repeat="c in a.splits" ><a href="{{c.link}}">{{c.name}}</a></td>
         </tr>
         </table>
         </div>
@@ -45,6 +50,6 @@
     var myApp = angular.module('myApp', []);
 </script>
 <script src="js/controllers/controller.js"></script>
-<script src="js/filter.js"></script>
+<script src="js/lib/bootstrap.min.js"></script>
 </body>
 </html>
